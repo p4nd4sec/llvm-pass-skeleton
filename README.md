@@ -11,7 +11,8 @@ Build:
     $ cmake ..
     $ make
     $ cd ..
-
+Add environtment variables:
+    $LLVM_DIR=`llvm build path`/lib/cmake/llvm cmake ..
 Run:
 
     $ clang -fpass-plugin=`echo build/skeleton/SkeletonPass.*` something.c
